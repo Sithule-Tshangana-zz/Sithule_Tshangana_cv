@@ -1,0 +1,179 @@
+/*
+  html {
+  background: radial-gradient(grey,black,white,grey,black,white,grey,black,white,grey,black,white,grey,black,white );
+  opacity: 0.90;
+  } */
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+body{
+
+background-image: url("paper.gif");
+  background-color: white;;
+  color: black;
+    /* opacity: 0.2; */
+}
+ul {list-style-type: none;}
+
+/* adding a border and radius to my image *///
+img{border: solid grey;
+  border-radius: 10px;
+  border-width: thick;
+}
+
+/* Trying to resize my images form my social media links*/
+footer img{
+  width: 80px; height: 80px;
+}
+footer a{
+  display: inline-block;
+}
+
+/*This is the sytles to my top section which is my name and pic  */
+.top{
+  display: grid;
+  grid-template-columns:80% 20%;
+}
+
+.sithule img
+  {
+     /* margin-top: 90px; */
+     border-bottom-right-radius: 10px;
+     border-top-left-radius: 10px;
+     height: 130px;
+ }
+/* Making the image responsive */
+ @media screen and (max-width:600px){
+
+  .top{
+    display: grid;
+        grid-template-columns:1fr;
+    grid-template-rows:auto auto;
+  }
+ }
+nav {
+  display: grid;
+  grid-template-columns: 100%;
+}
+/* Styles for the paragraph telling more about myself */
+.about{
+  display: grid;
+  grid-template-columns:100%;
+}
+.about_me{
+      padding: 10px;
+}
+/* personal details */
+.personal{display: grid;
+    grid-template-columns:100%;}
+
+/* my hobbies */
+.hobies{display: grid;
+    grid-template-columns:100%;
+}
+/* my life choices schooling and high school container */
+.education{
+    display: grid;
+    grid-template-columns:100%;
+  }
+
+  .Secondary_education{
+    display: grid;
+     grid-template-columns:100%;
+  }
+/* my skills */
+  .skills{
+    display: grid;
+    grid-template-columns:100%;
+  }
+/* expereience */
+  .expereience{
+    display: grid;
+    grid-template-columns:100%;
+  }
+
+  /* references */
+.references{
+  display: grid;
+  grid-template-columns:100%;
+}
+
+footer{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+    margin: 0 auto;
+        background-color: currentColor;
+
+}
+
+table{
+  width:100%;
+  /* border:1px solid white; */
+}
+table td{
+  width: 50%;
+}
+footer > a{
+  display: inline;
+    margin: 0 auto;
+}
+footer img{
+  margin: 0 auto;
+    display: inline;
+}
+.personal:nth-child(2n) {
+  /* margin-right: 0; */
+  /* background-color: black; */
+}
+.container{
+  /* height: 110px;
+  overflow: hidden; */
+}
+
+/* .carousel{
+  height: 110px;
+  width: 2888px;
+  animation-name: slideshow;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left:1500px;
+  overflow: hidden;
+} */
+.carousel img{
+  display: inline;
+  display: flex;
+  float: left;
+  padding: 30px;
+  width: 150px;
+ height: 150px;
+}
+
+/* @keyframes slideshow {
+  100% {
+    position: relative;
+    left: -100px;
+  }
+}  */
+.container1 {
+  /* width: 100%; */
+  background-color: #ddd;
+}
+
+.skills {
+  padding-right: 10px;
+  line-height: 20px;
+  color: black;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+/* .php {width: 45%; background-color: #808080;} */
+.jQuery{width: 40%; background-color: #808080;}
+.NodeJS{width: 40%; background-color: #808080;}
