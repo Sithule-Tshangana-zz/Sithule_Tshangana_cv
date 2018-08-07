@@ -1,8 +1,4 @@
-/*
-  html {
-  background: radial-gradient(grey,black,white,grey,black,white,grey,black,white,grey,black,white,grey,black,white );
-  opacity: 0.90;
-  } */
+
 
 .center-block {
     display: block;
@@ -11,11 +7,18 @@
   }
 body{
 
-background-image: url("paper.gif");
-  background-color: white;;
-  color: black;
+background-image: url("../images/noise.jpg");
+border-style: double;
+border-width: 10px;
+border-color: grey;
+  /* background-color: white;; */
+  /* color: black; */
     /* opacity: 0.2; */
 }
+h1 {
+   border-bottom: double 5px;
+ }
+
 ul {list-style-type: none;}
 
 /* adding a border and radius to my image *///
@@ -103,11 +106,12 @@ nav {
 
 footer{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns:1fr 1fr 1fr 1fr 1fr; */
   padding: 10px;
   grid-gap: 10px;
-    margin: 0 auto;
-        background-color: currentColor;
+    margin:  auto;
+  margin-top:  10px;
+        /* background-color: currentColor; */
 
 }
 
@@ -120,10 +124,10 @@ table td{
 }
 footer > a{
   display: inline;
-    margin: 0 auto;
+    margin:  auto;
 }
 footer img{
-  margin: 0 auto;
+  margin:  auto;
     display: inline;
 }
 .personal:nth-child(2n) {
@@ -131,6 +135,7 @@ footer img{
   /* background-color: black; */
 }
 .container{
+  margin-top: : 100px;
   /* height: 110px;
   overflow: hidden; */
 }
@@ -147,13 +152,16 @@ footer img{
 } */
 .carousel img{
   display: inline;
-  display: flex;
-  float: left;
+  /* display: flex; */
+  /* float: left; */
   padding: 30px;
   width: 150px;
  height: 150px;
 }
-
+.carousel {
+    position: relative;
+    margin: auto;
+}
 /* @keyframes slideshow {
   100% {
     position: relative;
@@ -176,4 +184,4 @@ footer img{
 .js {width: 65%; background-color: #f44336;}
 /* .php {width: 45%; background-color: #808080;} */
 .jQuery{width: 40%; background-color: #808080;}
-.NodeJS{width: 40%; background-color: #808080;}
+.NodeJS{width: 40%; background-color: #808000;}
