@@ -27,19 +27,38 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#">Home</a></li>
+        <li class=""><a href="index.html">Home</a></li>
         </li>
-        <li><a href="#">Education & skills</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#education&skills">Education & skills</a></li>
+        <li><a href="#social">Social links</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<div class="banner">
+  <h1 class="heading">Sithule Tshangana</h1>
+  <h2 class="subHeading">Full Stack Web Developer</h2>
+</div>
+
+<header class="subBanner">
+  <div class="email">
+    <a href="mailto:sithuletshangana@webmail.co.za" title="sithuletshangana@webmail.co.za">
+      <i class="far fa-envelope"></i>
+  sithuletshangana@webmail.co.za
+    </a>
+  </div>
+  <div class="tel">
+    <a href="tel:0733133600">
+    <i class="fas fa-phone"></i>
+    0733133600
+    </a>
+  </div>
+</header>
+
   <div class="top">
     <div class="title">
-    <h1>SITHULE TSHANGANA</h1>
       <article class="about">
-        <div class="about_me"> <p>A hard working  professional who engages himself fully in the workplace. Who always offers to the company a professional humble and willing-to-learn attitude.</p> </div>
+      <center>  <div class="about_me"> <p>A hard working  professional who engages himself fully in the workplace. Who always offers to the company a professional humble and willing-to-learn attitude.</p> </div>  </center> 
       </article>
     </div>
     <div class="sithule">
@@ -54,14 +73,14 @@
         <td>Gender</td>
         <td>Male</td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>Cellular number</td>
         <td>0733133600</td>
-      </tr>
-      <tr>
+      </tr> -->
+      <!-- <tr>
         <td>Email address</td>
         <td>sithuletshangana@webmail.co.za</td>
-      </tr>
+      </tr> -->
       <tr>
         <td>Home language</td>
         <td>Isixhosa</td>
@@ -74,12 +93,27 @@
         <td></td>
         <td>Afrikaans</td>
       </tr>
+      <br>
+      <tr>
+        <td>Address</td>
+        <td>20 ventnor close</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Highbury park</td>
+      </tr><tr>
+        <td></td>
+        <td>Kuilsriver</td>
+      </tr><tr>
+        <td></td>
+        <td>7580</td>
+      </tr>
     </table>
   </section>
 
   <hr>
 
-  <section class="education">
+  <section class="education" id="education&skills">
     <h3>Tertiary education</h3>
     <table>
       <tr>
@@ -319,7 +353,7 @@
 </div>
 
 </div>
-<div class="container">
+<div class="container" id="social">
   <footer>
 <div class="carousel">
   <a href="https://www.linkedin.com"> <img src="images/linkedin-logo-icon-65542.png" alt="Linkedin"> </a>
@@ -333,6 +367,36 @@
 
 <hr>
 <hr>
+<div class='to-top'>
+  <a class='back-to-top ion-chevron-up' href='#'></a>
+</div>
   </div>
+  <script type="text/javascript">
+  $(function () {
+
+var offset = 300,
+    duration = 800,
+    top_section = $('.to-top'),
+    toTopButton = $('a.back-to-top');
+// showing and hiding button according to scroll amount (in pixels)
+$(window).scroll(function () {
+  if( $(this).scrollTop() > offset ) {
+    $(top_section).fadeIn(duration);
+  } else{
+    $(top_section).fadeOut(duration);
+
+  }});
+
+// activate smooth scroll to top when clicking on the button
+
+$(toTopButton).click(function(e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: 0
+  }, 700);
+});
+
+});
+  </script>
 </body>
 </html>
